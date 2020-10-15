@@ -59,6 +59,8 @@ export default{
         open_on_weekends,
         images
     }
+    
+    // open_on_weekends === 'true'
 
     const schema = Yup.object().shape({
         name: Yup.string().required(),
@@ -75,6 +77,8 @@ export default{
 
         )
     });
+
+    
 
     await schema.validate(data, {
         abortEarly: false,
